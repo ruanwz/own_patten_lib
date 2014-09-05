@@ -22,7 +22,7 @@ gulp.task 'coffee', ->
   .pipe(gulp.dest('./js/'))
 
 gulp.task 'watch', ->
-  gulp.watch('sass/*.scss', ['sass'])
+  gulp.watch('sass/**/*.scss', ['sass'])
   gulp.watch('coffee/*.coffee', ['coffee'])
   server = livereload()
   gulp.watch('*.html').on('change', (file)->

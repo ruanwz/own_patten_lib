@@ -1,3 +1,78 @@
+@import "../settings/settings";
+/* Main Container */
 .container {
   width: 95%;
+  margin: 0 auto;
+}
+
+/* Columns */
+[class^="col-"] {
+  float: left;
+  padding: 0 1em;
+}
+
+/* Rows */
+.row {
+  margin-left: -$gutter;
+  margin-right: -$gutter;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+/* Column Width */
+@for $i from 1 through $column-count {
+  .col-#{$i} {
+    width: (100/$column-count) * $i * 1%;
+  }
+}
+
+/* Special Class*/
+
+.col-fourth {
+  width: (100/4) * 1%;
+}
+.col-third {
+  width: (100/3) * 1%;
+}
+
+.col-two-third {
+  width: (100/3) * 2%;
+
+}
+.col-half {
+  width: 50%;
+}
+.col-two-fourth {
+  width: (100/4) * 1%;
+
+}
+
+/* responsive image */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* responsive behavior */
+@media (max-width: 1024px) {
+  [class^="col-"] {
+    padding: 0 $gutter/2;
+  }
+
+  .row {
+    margin-left: -$gutter / 2;
+    margin-right: -$gutter / 2;
+  }
+}
+
+@media (max-width: 768px) {
+  [class^="col-"] {
+    width: 100%;
+  }
 }
