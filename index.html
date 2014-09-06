@@ -3,13 +3,33 @@
     <title></title>
     <meta name="generator" content="Vim" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/vendors/prism.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/helper.css" />
-  </head>
-  <body>
+    <script src="js/vendors/jquery.js"></script>
+    <script src="js/vendors/prism.js"></script>
+  </head> <body>
+	<div class="pres-widget">
+		<p><strong>Jump to:</strong></p>
+
+		<ul>
+			<li><a href="#top">Top</a></li>
+			<li><a href="#nav-grid">The Grid System</a></li>
+			<li><a href="#nav-typography">Typography</a></li>
+			<li><a href="#nav-buttons">Buttons</a></li>
+			<li><a href="#nav-forms">Forms</a></li>
+			<li><a href="#nav-icons">Icons</a></li>
+			<li><a href="#nav-feedback">Feedback</a></li>
+			<li><a href="#nav-navigation">Navigation</a></li>
+			<li><a href="#nav-animations">Animations</a></li>
+			<li><a href="#nav-tabs">Tabs</a></li>
+			<li><a href="#nav-accordions">Accordions</a></li>
+			<li><a href="#nav-carousels">Carousels</a></li>
+		</ul>
+	</div> <!-- end pres-widget -->
     <section>
       <div class="container">
-        <h1>The Grid System</h1>
+        <h1 id="nav-grid">The Grid System</h1>
         <hr />
         <div class="row">
           <div class="col-12">
@@ -94,6 +114,128 @@
           </div>
           <div class="col-1">
             <div class="demo-col">.col-1</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4"><h5>CSS Notes</h5>
+            <ul>
+              <li>remember to load nomralize.css first</li>
+              <li>.container use margin to make content centered</li>
+              <li>use class^="col-" to make col float</li>
+              <li>.row:after to clear float</li>
+              <li>use scss @for to define .col-$</li>
+              <li>img use max-width to make responsive</li>
+              <li>use @media to make it responsive</li>
+            </ul>
+          </div>
+          <div class="col-8">
+            <pre class="line-numbers"><code class="language-scss">
+
+/* Main Container */
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* Columns */
+[class^="col-"] {
+  float: left;
+  padding: 0 1em;
+}
+
+/* Rows */
+.row {
+  margin-left: -$gutter;
+  margin-right: -$gutter;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+/* Column Width */
+@for $i from 1 through $column-count {
+  .col-#{$i} {
+    width: (100/$column-count) * $i * 1%;
+  }
+}
+
+/* Special Class*/
+
+.col-fourth {
+  width: (100/4) * 1%;
+}
+.col-third {
+  width: (100/3) * 1%;
+}
+
+.col-two-third {
+  width: (100/3) * 2%;
+
+}
+.col-half {
+  width: 50%;
+}
+.col-two-fourth {
+  width: (100/4) * 1%;
+
+}
+
+/* responsive image */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* responsive behavior */
+@media (max-width: 1024px) {
+  [class^="col-"] {
+    padding: 0 $gutter/2;
+  }
+
+  .row {
+    margin-left: -$gutter / 2;
+    margin-right: -$gutter / 2;
+  }
+}
+
+@media (max-width: 768px) {
+  [class^="col-"] {
+    width: 100%;
+  }
+}
+            </code></pre>
+          </div>
+        </div>
+        <div class="notes row">
+          <div class="col-2"><h5>Notes</h5>  
+          <p>Here is some example code</p>
+          </div>
+          <div class="col-10">
+            <pre class="line-numbers"><code class="language-markup">
+&lt;div class=&quot;container&quot;&gt;
+  &lt;h1&gt;The Grid System&lt;/h1&gt;
+  &lt;hr /&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-12&quot;&gt;
+      &lt;div class=&quot;demo-col&quot;&gt;.col-12&lt;/div&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-2&quot;&gt;
+      &lt;div class=&quot;demo-col&quot;&gt;.col-2&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-10&quot;&gt;
+      &lt;div class=&quot;demo-col&quot;&gt;.col-10&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+            </code></pre>
           </div>
         </div>
       </div>
