@@ -1,0 +1,21 @@
+{
+  "name": "own_pattern_lib",
+  "version": "0.0.1",
+  "homepage": "http://ruanwz.github.io/own_patten_lib/",
+  "authors": [
+    "David Ruan <ruanwz@gmail.com>"
+  ],
+  "description": "own pattern lib",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1"
+  }
+}
