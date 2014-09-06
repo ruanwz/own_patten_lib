@@ -1,6 +1,7 @@
 # Pattern Requirements
 
 This document will describe the structure of each pattern and its behaviour under various screen sizes.
+Link is http://ruanwz.github.io/own_patten_lib/
 Another example is: http://ux.mailchimp.com/patterns
 
 ---
