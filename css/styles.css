@@ -100,7 +100,7 @@ mark {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
-small {
+small, blockquote footer {
   font-size: 80%; }
 
 /**
@@ -411,6 +411,103 @@ img {
 @media (max-width: 768px) {
   [class^="col-"] {
     width: 100%; } }
+
+html {
+  font-size: 1em; }
+
+html, input, button, textarea {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
+
+body {
+  color: #333;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5em; }
+
+p {
+  margin-bottom: 1.5em; }
+
+a, a:visited {
+  color: #0f82bd; }
+  a:hover, a:visited:hover {
+    color: #333; }
+
+hr {
+  border: 0;
+  background-color: #ccc;
+  height: 1px;
+  margin: 1.5em 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.5em 0 0.5em;
+  line-height: 1.2; }
+
+h5, h6 {
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 3.998em; }
+
+h2 {
+  font-size: 2.827em; }
+
+h3 {
+  font-size: 1.999em; }
+
+h4 {
+  font-size: 1.414em; }
+
+h5 {
+  font-size: 1em; }
+
+h6 {
+  font-size: 0.707em; }
+
+ul, ol {
+  margin: 0 0 1.5em 1.5em; }
+
+blockquote {
+  color: #808080;
+  font-style: italic;
+  margin-left: 1.5em; }
+  blockquote footer {
+    font-style: normal; }
+
+html {
+  font-size: 1em; }
+
+button, .btn, .btn-primary, .btn-small, .btn-large, a.btn, a.btn-primary, a.btn-small, a.btn-large {
+  border: 0;
+  border-radius: 3px;
+  background-color: #dde2d4;
+  color: #333;
+  cursor: pointer;
+  line-height: 1;
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.75em 1.5em; }
+  button:hover, .btn:hover, .btn-primary:hover, .btn-small:hover, .btn-large:hover, a.btn:hover, a.btn-primary:hover, a.btn-small:hover, a.btn-large:hover {
+    background-color: #333;
+    color: #fff; }
+  button:active, .btn:active, .btn-primary:active, .btn-small:active, .btn-large:active, a.btn:active, a.btn-primary:active, a.btn-small:active, a.btn-large:active {
+    background-color: #4d4d4d; }
+  button:focus, .btn:focus, .btn-primary:focus, .btn-small:focus, .btn-large:focus, a.btn:focus, a.btn-primary:focus, a.btn-small:focus, a.btn-large:focus {
+    outline: none; }
+
+.btn-primary {
+  background-color: #0f82bd;
+  color: #d0edfb; }
+
+.btn-small {
+  font-size: 0.75em; }
+
+.btn-large {
+  font-size: 2em;
+  font-weight: bold; }
 
 /**
  * ----------------------------------------------------------------------------------------
