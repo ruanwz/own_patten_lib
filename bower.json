@@ -18,6 +18,7 @@
   "dependencies": {
     "jquery": "~2.1.1",
     "prefix-free": "gh-pages",
-    "prism": "gh-pages"
+    "prism": "gh-pages",
+    "fontawesome": "~4.2.0"
   }
 }
