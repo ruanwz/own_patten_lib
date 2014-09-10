@@ -593,6 +593,38 @@ form input[type="radio"]:checked + label:before {
 .icon-huge {
   font-size: 250%; }
 
+[class^="alert-"] {
+  border: 1px solid;
+  border-bottom-width: 3px;
+  margin: 1.5em 0;
+  padding: 1.5em; }
+  [class^="alert-"] p {
+    margin-bottom: 0; }
+
+.alert-information {
+  border-color: #bdddee;
+  background-color: #fafcfe; }
+  .alert-information :first-child {
+    color: #439ccf; }
+
+.alert-error {
+  border-color: #f6a69f;
+  background-color: #fde7e5; }
+  .alert-error :first-child {
+    color: #e72915; }
+
+.alert-warning {
+  border-color: #ffa56d;
+  background-color: #ffd4ba; }
+  .alert-warning :first-child {
+    color: #d35400; }
+
+.alert-success {
+  border-color: #bfdf91;
+  background-color: #e1f0cc; }
+  .alert-success :first-child {
+    color: #74a730; }
+
 /**
  * ----------------------------------------------------------------------------------------
  * 3.0 - Presentation Styles.
