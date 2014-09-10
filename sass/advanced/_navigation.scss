@@ -11,8 +11,21 @@
 
   .rwd-menu {
     display: none;
+    a {
+      display: block;
+      padding: .75em 1.5em;
+      font-weight: bold;
+      text-decoration: none;
+      &:active {
+        background-color: $btn-default-bg;
+      }
+    }
   }
 
+   ul {
+    list-style-type: none;
+    margin-bottom: 0;
+  }
   @media (max-width: 768px) {
     .logo img,
     #rwd-trigger {
@@ -22,6 +35,7 @@
 
     .sf-menu {
       display: none;
+
     }
   }
 }
