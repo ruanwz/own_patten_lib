@@ -20,6 +20,7 @@
     "prefix-free": "gh-pages",
     "prism": "gh-pages",
     "fontawesome": "~4.2.0",
-    "superfish": "~1.7.4"
+    "superfish": "~1.7.4",
+    "animate.css": "~3.2.0"
   }
 }
