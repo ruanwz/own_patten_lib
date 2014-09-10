@@ -625,6 +625,19 @@ form input[type="radio"]:checked + label:before {
   .alert-success :first-child {
     color: #74a730; }
 
+.navbar-container #rwd-trigger {
+  display: none; }
+.navbar-container .sf-menu {
+  float: right; }
+.navbar-container .rwd-menu {
+  display: none; }
+@media (max-width: 768px) {
+  .navbar-container .logo img, .navbar-container #rwd-trigger {
+    display: block;
+    margin: 0 auto 1.5em auto; }
+  .navbar-container .sf-menu {
+    display: none; } }
+
 /**
  * ----------------------------------------------------------------------------------------
  * 3.0 - Presentation Styles.

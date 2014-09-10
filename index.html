@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="css/vendors/fontawesome/css/font-awesome.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/helper.css" />
-    <script src="js/vendors/jquery.js"></script>
-    <script src="js/vendors/prism.js"></script>
   </head> <body>
   <div class="pres-widget">
     <p><strong>Jump to:</strong></p>
@@ -541,38 +539,75 @@ img {
       </div>
     </section>
 
-  <section>
-    <div class="container">
-      <h1 id="nav-feedback">Feedback</h1>
-      <hr>
-      <div class="row">
-        <div class="col-half">
-          <div class="alert-information">
-            <p><strong>Information</strong></p>
-            <p>This is the body of the message!</p>
-          </div> <!-- end alert -->
+    <section>
+      <div class="container">
+        <h1 id="nav-feedback">Feedback</h1>
+        <hr>
+        <div class="row">
+          <div class="col-half">
+            <div class="alert-information">
+              <p><strong>Information</strong></p>
+              <p>This is the body of the message!</p>
+            </div> <!-- end alert -->
 
-          <div class="alert-error">
-            <p><strong>Error</strong></p>
-            <p>This is the body of the message!</p>
-          </div> <!-- end alert -->
-        </div> <!-- end col-half -->
+            <div class="alert-error">
+              <p><strong>Error</strong></p>
+              <p>This is the body of the message!</p>
+            </div> <!-- end alert -->
+          </div> <!-- end col-half -->
 
-        <div class="col-half">
-          <div class="alert-warning">
-            <p><strong>Warning</strong></p>
-            <p>This is the body of the message!</p>
-          </div> <!-- end alert -->
+          <div class="col-half">
+            <div class="alert-warning">
+              <p><strong>Warning</strong></p>
+              <p>This is the body of the message!</p>
+            </div> <!-- end alert -->
 
-          <div class="alert-success">
-            <p><strong>Success</strong></p>
-            <p>This is the body of the message!</p>
-          </div> <!-- end alert -->
-        </div> <!-- end col-half -->
-      </div> <!-- end row -->
-    </div> <!-- end container -->
-  </section>
-    <p>content goes here...</p>
+            <div class="alert-success">
+              <p><strong>Success</strong></p>
+              <p>This is the body of the message!</p>
+            </div> <!-- end alert -->
+          </div> <!-- end col-half -->
+        </div> <!-- end row -->
+      </div> <!-- end container -->
+    </section>
+    <section>
+      <div class="container">
+        <h1 id="nav-navigation">Navigation</h1>
+        <hr>
+        <div class="row navbar-container">
+          <div class="col-4">
+            <a class="logo" href="#"><img src="images/demo/logo.png" alt="Logo"></a>
+          </div>
+          <div class="col-8">
+            <button class="btn" id="rwd-trigger">Toggle Menu</button>
+            <nav>
+              <ul class="sf-menu">
+                <li><a href="#">item 1</a></li>
+                <li>
+                  <a href="#">item 2</a>
+                  <ul>
+                    <li><a href="#">subitem 1</a></li>
+                    <li><a href="#">subitem 2</a></li>
+                    <li><a href="#">subitem 3</a></li>
+                    <li><a href="#">subitem 4</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">item 3</a></li>
+                <li><a href="#">item 4</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        
+      </div>
+
+    </section>
+
+    <script src="js/vendors/jquery.js"></script>
+    <script src="js/vendors/prism.js"></script>
+    <script src="js/vendors/superfish/superfish.js"></script>
+    <script src="js/vendors/superfish/hoverIntent.js"></script>
+    <script src="js/navigation.js"></script>
   </body>
 </html>
 

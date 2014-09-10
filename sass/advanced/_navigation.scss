@@ -1,0 +1,27 @@
+@import "../settings/settings";
+
+.navbar-container {
+  #rwd-trigger {
+    display: none;
+  }
+
+  .sf-menu {
+    float: right;
+  }
+
+  .rwd-menu {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .logo img,
+    #rwd-trigger {
+      display: block;
+      margin: 0 auto $baseline auto;
+    }
+
+    .sf-menu {
+      display: none;
+    }
+  }
+}
