@@ -689,6 +689,28 @@ form input[type="radio"]:checked + label:before {
   .tab.active {
     display: block; }
 
+.accordion {
+  border: 1px solid #ccc; }
+
+.accordion-element-title {
+  border-bottom: 1px solid #ccc;
+  background-color: #ebeeef;
+  color: #808080;
+  text-decoration: none;
+  display: block;
+  padding: 1.5em; }
+  .accordion-element-title:hover, .accordion-element-title:active {
+    color: #fff;
+    background-color: #ddd; }
+  .accordion-element:last-child .accordion-element-title {
+    border-bottom: 0; }
+
+.accordion-element-content {
+  display: none;
+  padding: 1.5em; }
+  .accordion-element-content p:last-child {
+    margin-bottom: 0; }
+
 /**
  * ----------------------------------------------------------------------------------------
  * 3.0 - Presentation Styles.
